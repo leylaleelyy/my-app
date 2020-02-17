@@ -1,0 +1,26 @@
+.bg5 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../assets/imgs/bg5.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  .ui1 {
+    position: absolute;
+    transform: scale(1);
+    left: 25vw;
+    top: 17vh;
+    width: 25vw;
+  }
+}
+
+@keyframes flyback {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-20vw, 2.5vh) scale(1);
+  }
+  100% {
+    transform: translate(-100vw, 5vh) scale(1);
+  }
+}

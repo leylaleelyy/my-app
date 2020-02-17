@@ -1,0 +1,99 @@
+.bg3 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../assets/imgs/bg3.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  .title {
+    position: absolute;
+    top: 37vh;
+    font-size: 6vw;
+    width: 100%;
+    text-align: center;
+    color: #630000;
+  }
+  .man {
+    transform: scale(0);
+    position: absolute;
+    bottom: 8vh;
+    right: 0;
+    height: 40vh;
+    animation: slide-in 500ms ease-in 1s forwards;
+  }
+  .idea {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    background-image: url('../../assets/imgs/idea.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: fly2 2s ease-in forwards;
+  }
+  .biao {
+    width: 100%;
+  }
+  .rili {
+    position: absolute;
+    top: -1vh;
+    right: -4vw;
+    width: 65vw;
+  }
+}
+
+@keyframes fly2 {
+  0% {
+    transform: translate(-30vw, 20vh);
+  }
+  25%,
+  50%,
+  75% {
+    transform: translate(35vw, 20vh) scale(0.8);
+  }
+  100% {
+    transform: translate(2vw, 60vh) scale(0);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0.2;
+    transform: translate(50%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.fly-enter {
+  opacity: 0;
+  transform: translate(-36vw, 60vh) scale(0) skewX(40deg) skewY(-60deg) rotate(60deg);
+}
+
+.fly-enter-active {
+  opacity: 0.7;
+  transform: translate(-18vw, 30vh) scale(0.5) skewX(20deg) skewY(-60deg) rotate(50deg);
+  transition: all 200ms linear;
+}
+
+.fly-enter-done {
+  opacity: 1;
+  transform: translate(0, 5vh) scale(1);
+  transition: all 200ms linear;
+}
+
+.fly-exit {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+  transition: all 200ms linear;
+}
+
+.fly-exit-active {
+  opacity: 0.5;
+  transform: translateY(9vh) scale(0.5);
+  transition: all 200ms linear;
+}
+
+.fly-exit-done {
+  opacity: 0;
+  transform: scale(0);
+}

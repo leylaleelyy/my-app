@@ -1,0 +1,81 @@
+#root {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(248, 231, 209);
+  .start {
+    text-decoration: none;
+    color: #333;
+    opacity: 0.5;
+    position: absolute;
+    left: 40vw;
+    bottom: 10vh;
+    z-index: 5;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 100%;
+    border: #bfbfbf 2vw solid;
+    box-shadow: 0px 3px 9px 2px #bfbfbf;
+    display: block;
+    animation: tishi 5s ease-in-out infinite;
+  }
+  .nsignin {
+    display: block;
+    font-size: 5vw;
+    width: 22vw;
+    height: 9vw;
+    background-image: url('./assets/imgs/signin.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1vh;
+    right: 13vw;
+    padding-top: 1.5vh;
+    padding-left: 1vw;
+    text-decoration: none;
+    color: #000;
+  }
+  .playing {
+    position: absolute;
+    z-index: 10;
+    right: 2vw;
+    top: 0;
+    width: 9vw;
+    height: 9vw;
+    background-image: url('./assets/imgs/music.png');
+    background-size: 100%;
+    animation: playing 2s linear infinite;
+  }
+  .paused {
+    position: absolute;
+    z-index: 10;
+    right: 2vw;
+    top: 0;
+    width: 9vw;
+    height: 9vw;
+    background-image: url('./assets/imgs/pause.png');
+    background-size: 100%;
+  }
+  .code {
+    width: 50vw;
+    height: 50vh;
+    left: 25vw;
+    top: 20vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    color: #630000;
+    font-size: 35px;
+  }
+}
+
+@keyframes playing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
