@@ -10,7 +10,7 @@
     "animate.css": "^3.7.2",
     "animated": "^0.2.2",
     "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nprogress": "^0.2.0",
     "qrcode.react": "^1.0.0",
     "qrcode2": "^1.2.3",
